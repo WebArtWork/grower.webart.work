@@ -1,10 +1,10 @@
 {
-	"title": "Title which will fit on all pages",
-	"description": "Description which will fit on all pages",
+	"title": "Інвестиції в зелений капітал",
+	"description": "GROWER — український проєкт з понад 25-річним досвідом у вирощуванні, продажу та імпорті квітів, рослин і декоративних дерев. Пропонуємо інвестиції у вирощування туй із прибутковістю 100–300% за 2–3 роки. Мінімальна інвестиція — $180. Онлайн-доступ до теплиць забезпечує повну прозорість та контроль.",
 	"keywords": "waw, web art work, server render, template",
 	"prefix": "/wjst-default",
-	"favicon": "img/favicon.ico",
-	"image": "https://webartwork.github.io/wjst-default/img/avatar.png",
+	"favicon": "img/about.png",
+	"image": "https://grower.webart.work/img/about.png",
 	"author": "Honchar Denys",
 	"scss": "scss/index.scss",
 	"items": [
