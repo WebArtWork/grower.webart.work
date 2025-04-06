@@ -114,3 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	};
 });
+document.querySelector(".burger-wrap").addEventListener("click", function() {
+    document.querySelector(".header-navigation").classList.toggle("header-navigation--open");
+    document.querySelector(".burger").classList.toggle("burger--close");
+});

@@ -69,13 +69,13 @@ ul {
 /* === PAGE LAYOUT === */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
 	.burger-wrap {
 		display: flex;
 		align-items: center;
 		position: absolute;
 		z-index: 3;
-		right: 15px;
+		left: 0;
 		transform: translateY(-50%);
 		top: 50%;
 	}
