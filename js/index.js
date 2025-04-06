@@ -118,3 +118,18 @@ document.querySelector(".burger-wrap").addEventListener("click", function() {
     document.querySelector(".header-navigation").classList.toggle("header-navigation--open");
     document.querySelector(".burger").classList.toggle("burger--close");
 });
+
+document.querySelectorAll('a.anchor').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            const targetPosition = targetElement.offsetTop;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});

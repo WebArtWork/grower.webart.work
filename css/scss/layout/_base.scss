@@ -97,4 +97,13 @@ ul {
 	.burger--close::before {
 		transform-origin: 0;
 	}
+	.footer{
+		background: #c4e69a42;
+	}
+	.footer-wrapper{
+		flex-flow: column wrap;	
+	}	
+	.footer-socials{
+		padding-top: 15px;
+	}
 }
