@@ -68,6 +68,7 @@ header{
 		display: flex;
 		a{
 			margin-right: 20px;
+			display: flex;
 			&:last-child{
 				margin-right: 0;
 			}
@@ -170,8 +171,9 @@ header{
 		align-items: center;
 	}
 	&-img{
-		flex: 0 0 370px;
-
+		flex: 0 0 100%;
+        max-width: 370px;
+        margin-top: 30px;
 	}
 	&-text{
 		flex: 1 0;
@@ -512,6 +514,7 @@ header{
 
 
   .footer{
+	padding-bottom: 20px;
 	&-wrapper{
 		display: flex;
 		justify-content: space-between;
@@ -603,8 +606,20 @@ header{
 	.about-img {
 		flex: 0 0 300px;
 	}
-	.mission-img{
-		flex: 0 0 250px;
+	.mission-img {
+        flex: 0 0 370px;
+    }
+	.mission-text {
+		padding-right: 30px;
+	}
+	.mission-text__title {
+		font-size: 22px;
+	}
+	.mission {
+		padding: 10px 0 70px;
+	}
+	.mission-wrapper{
+		align-items: start;
 	}
 	.why-us__wrap {
 		flex: 0 0 33.333%;
