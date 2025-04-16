@@ -499,7 +499,7 @@ header{
 	&-text{
 		padding: 0 20px;
 		font-weight: 700;
-		font-size: 32px;
+		font-size: 18px;
 		text-transform: uppercase;
 		text-align: center;
 		color: #3a3333;
@@ -508,6 +508,11 @@ header{
 			background-clip: text;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
+		}
+	}
+	&-btn{
+		.btn{
+			margin: 15px auto 0;
 		}
 	}
   }
@@ -521,13 +526,32 @@ header{
 		align-items: center;
 	}
 	&-socials{
+		&__mail{
+			flex: 0 0 100%;
+			a{
+				color: #000000be;
+				display: flex;
+				justify-content: end;
+				font-weight: 900;
+				margin-bottom: 5px;
+			}
+		}
 		display: flex;
+		flex-flow: row wrap;
+		justify-content: end;
 		a{
 			display: flex;
 			margin-right: 25px;
 			&:last-child{
 				margin-right: 0;
 			}
+		}
+	}
+	&-politic{
+		a{
+			color: #00000096;
+			font-weight: 700;
+			text-decoration: underline;
 		}
 	}
   }
@@ -628,6 +652,28 @@ header{
 	.global-title {
 		padding-bottom: 40px;
 		font-size: 38px;
+	}
+	.join-img:first-child{
+		display: none;
+	}
+	.join-wrapper{
+		display: flex;
+		flex-flow: column wrap;
+	}
+	.join-img{
+		margin-top: 20px;
+	}
+	.join-btn{
+		margin-top: 20px;
+	}
+	.footer-socials {
+		justify-content: center;
+	}
+	.footer-socials__mail a {
+		justify-content: center;
+	}
+	.footer_logo{
+		margin: 10px 0 15px 0;
 	}
   }
 
