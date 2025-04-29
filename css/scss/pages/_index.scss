@@ -34,6 +34,7 @@ header{
 	position: fixed;
 	width: 100%;
 	background: #00000080;
+	padding: 5px 0;
 	&-wrapper{
 		display: flex;
 		align-items: center;
@@ -51,7 +52,7 @@ header{
 				font-size: 20px;
 				line-height: 190%;
 				text-transform: uppercase;
-				color: #fff;
+				color: #181717;
 				transition: all .3s;
 				&:hover{
 					font-size: 20px;
