@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base href="/" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Honchar Denys" />
+
+		<title>Інвестиції в зелений капітал</title>
+		<meta itemprop="name" content="Інвестиції в зелений капітал" />
+		<meta name="twitter:title" content="Інвестиції в зелений капітал" />
+		<meta property="og:title" content="Інвестиції в зелений капітал" />
+
+		<meta name="description" content="GROWER — український проєкт з понад 25-річним досвідом у вирощуванні, продажу та імпорті квітів, рослин і декоративних дерев. Пропонуємо інвестиції у вирощування туй із прибутковістю 100–300% за 2–3 роки. Мінімальна інвестиція — $180. Онлайн-доступ до теплиць забезпечує повну прозорість та контроль." />
+		<meta itemprop="description" content="GROWER — український проєкт з понад 25-річним досвідом у вирощуванні, продажу та імпорті квітів, рослин і декоративних дерев. Пропонуємо інвестиції у вирощування туй із прибутковістю 100–300% за 2–3 роки. Мінімальна інвестиція — $180. Онлайн-доступ до теплиць забезпечує повну прозорість та контроль." />
+		<meta name="twitter:description" content="GROWER — український проєкт з понад 25-річним досвідом у вирощуванні, продажу та імпорті квітів, рослин і декоративних дерев. Пропонуємо інвестиції у вирощування туй із прибутковістю 100–300% за 2–3 роки. Мінімальна інвестиція — $180. Онлайн-доступ до теплиць забезпечує повну прозорість та контроль." />
+		<meta property="og:description" content="GROWER — український проєкт з понад 25-річним досвідом у вирощуванні, продажу та імпорті квітів, рослин і декоративних дерев. Пропонуємо інвестиції у вирощування туй із прибутковістю 100–300% за 2–3 роки. Мінімальна інвестиція — $180. Онлайн-доступ до теплиць забезпечує повну прозорість та контроль." />
+
+		<meta itemprop="image" content="https://grower.webart.work/img/about.png" />
+		<meta name="twitter:image:src" content="https://grower.webart.work/img/about.png" />
+		<meta property="og:image" content="https://grower.webart.work/img/about.png" />
+
+		<link rel="icon" type="image/x-icon" href="img/about.png" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="main-content">
+			<main class="main-content__section">
+				<!--
+<div class="index">
+	<img class="index-avatar" src="img/avatar.png" alt="" />
+
+	<div class="index-title">Welcome to WAW Template</div>
+	<div class="index-readme">
+		<div class="index-readme__item">
+			To create new page you can type in terminal:
+			<span class="index-readme__code">waw page NAME</span>
+		</div>
+		<div class="index-readme__item">
+			You can change port in
+			<span class="index-readme__code">config.json</span>
+			of development webiste
+			<a class="index-readme__link" href="http://localhost:8000">localhost:8000</a>
+		</div>
+		<div class="index-readme__item">
+			JSON in template.json is accesible over all pages
+		</div>
+		<div class="index-readme__item">
+			JSON in page.json of each page is accesible only of that specific
+			page
+		</div>
+		<div class="index-readme__item">
+			To build project you can type in terminal:
+			<span class="index-readme__code">waw build</span>
+			which will take JSON info and put it into html of dist folder.
+		</div>
+		<div class="index-readme__item">
+			General idea of variables, is that you can modify those on back-end or over
+			<span class="index-readme__code">config.json</span>
+		</div>
+		<div class="index-readme__item">
+			More details of how to use template you can find in
+			<a class="index-readme__link" href="https://webartwork.github.io/wjst/docs">Wjst Documentation</a>
+		</div>
+		<div class="index-readme__item">
+			Styles: You should import each file to
+			<span class="index-readme__code">index.scss </span> located in
+			<span class="index-readme__code">css</span> folder and write SCSS
+			files in <span class="index-readme__code">css/scss</span>.
+		</div>
+	</div>
+	<div class="index-readme">
+		<div class="index-readme__title">Prefix:</div>
+		<div class="index-readme__item">
+			Prefix which we have in template.json serve as root id for the
+			template
+		</div>
+		<div class="index-readme__item">
+			For example file
+			<span class="index-readme__code">img/avatar.png</span>
+			can be served in html
+			<span class="index-readme__code">src="img/avatar.png"</span>
+			were our path is
+			<span class="index-readme__code">{prefix}{path}</span>
+		</div>
+		<div class="index-readme__item">
+			Prefix should be unique on project where we have more then one
+			template to serve files properly
+		</div>
+		<div class="index-readme__item">
+			To change prefix, you need simply to replace all in editor phrase
+			`/wjst-default` into new prefix `/newPrefixName`
+		</div>
+		<div class="index-readme__item">
+			To get served template by github pages, you simply have to replace
+			prefix to name of the repo and do
+			<span class="index-readme__code">waw build</span>
+			and then commit to branch which you set in settings > pages
+			<span class="index-readme__code">{repo}/settings/pages</span>
+			and after that you should able to see your wesite online, similar
+			this default repo is shown
+			<a class="index-readme__link"
+				href="https://webartwork.github.io/wjst-default">webartwork.github.io/wjst-default</a>
+		</div>
+	</div>
+</div>
+-->
+
+<!--
+	
+-->
+
+<header>
+	<div class="container">
+		<div class="header-wrapper">
+			<div class="header__logo">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<div class="burger-wrap">
+				<div class="burger"></div>
+			</div>
+			<ul class="header-navigation">
+				<li> <a href="#us" class="anchor"> Про нас </a> </li>
+				<li> <a href="#garant" class="anchor"> Гарантії </a> </li>
+				<li> <a href="#plants" class="anchor"> Рослини</a> </li>
+			</ul>
+			<div class="header-socials">
+				<a href="tel:+380985648091">
+					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+						<defs>
+						  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(75)">
+							<stop offset="0%" stop-color="rgb(10, 165, 102)" />
+							<stop offset="100%" stop-color="rgb(61, 192, 136)" />
+						  </linearGradient>
+						</defs>
+						<rect width="40" height="40" rx="20" fill="url(#grad1)"/>
+						<path d="M23.3022 9.91807C24.9276 10.3543 26.4097 11.2104 27.5997 12.4004C28.7897 13.5904 29.6458 15.0724 30.082 16.6978" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M23.3022 9.91807C24.9276 10.3543 26.4097 11.2104 27.5997 12.4004C28.7897 13.5904 29.6458 15.0724 30.082 16.6978" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M22.3079 13.6194C23.2854 13.879 24.177 14.3924 24.8922 15.1077C25.6074 15.8229 26.1209 16.7145 26.3805 17.692" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M22.3079 13.6194C23.2854 13.879 24.177 14.3924 24.8922 15.1077C25.6074 15.8229 26.1209 16.7145 26.3805 17.692" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M15.2886 20.0757C16.2747 22.1121 17.9213 23.7545 19.9602 24.7353C20.1106 24.8065 20.277 24.8373 20.4429 24.8247C20.6088 24.8121 20.7686 24.7566 20.9065 24.6634L23.9011 22.6631C24.0334 22.5733 24.1863 22.5186 24.3455 22.5039C24.5047 22.4892 24.665 22.5151 24.8114 22.5792L30.4173 24.9869C30.6089 25.0666 30.769 25.2071 30.8729 25.3868C30.9768 25.5664 31.0187 25.7752 30.9923 25.9811C30.8146 27.3678 30.1377 28.6424 29.0883 29.5662C28.0388 30.4899 26.6887 30.9997 25.2906 31C20.9701 31 16.8265 29.2837 13.7714 26.2286C10.7163 23.1735 9 19.0299 9 14.7094C9.00032 13.3113 9.51006 11.9612 10.4338 10.9117C11.3576 9.86229 12.6322 9.18539 14.0189 9.00771C14.2248 8.98127 14.4336 9.02323 14.6132 9.12712C14.7929 9.23101 14.9334 9.39108 15.0131 9.58267L17.4208 15.2005C17.4834 15.3447 17.5096 15.502 17.4971 15.6587C17.4845 15.8154 17.4337 15.9665 17.3489 16.0989L15.3485 19.1414C15.2595 19.279 15.2072 19.4372 15.1967 19.6008C15.1862 19.7643 15.2179 19.9279 15.2886 20.0757Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M15.2886 20.0757C16.2747 22.1121 17.9213 23.7545 19.9602 24.7353C20.1106 24.8065 20.277 24.8373 20.4429 24.8247C20.6088 24.8121 20.7686 24.7566 20.9065 24.6634L23.9011 22.6631C24.0334 22.5733 24.1863 22.5186 24.3455 22.5039C24.5047 22.4892 24.665 22.5151 24.8114 22.5792L30.4173 24.9869C30.6089 25.0666 30.769 25.2071 30.8729 25.3868C30.9768 25.5664 31.0187 25.7752 30.9923 25.9811C30.8146 27.3678 30.1377 28.6424 29.0883 29.5662C28.0388 30.4899 26.6887 30.9997 25.2906 31C20.9701 31 16.8265 29.2837 13.7714 26.2286C10.7163 23.1735 9 19.0299 9 14.7094C9.00032 13.3113 9.51006 11.9612 10.4338 10.9117C11.3576 9.86229 12.6322 9.18539 14.0189 9.00771C14.2248 8.98127 14.4336 9.02323 14.6132 9.12712C14.7929 9.23101 14.9334 9.39108 15.0131 9.58267L17.4208 15.2005C17.4834 15.3447 17.5096 15.502 17.4971 15.6587C17.4845 15.8154 17.4337 15.9665 17.3489 16.0989L15.3485 19.1414C15.2595 19.279 15.2072 19.4372 15.1967 19.6008C15.1862 19.7643 15.2179 19.9279 15.2886 20.0757Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+					  </svg>					  
+				</a>
+				<a href="https://www.instagram.com/grower_invest?igsh=MWkxbGc0dmM2bHF3bQ==" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+						<defs>
+						  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(75)">
+							<stop offset="0%" stop-color="rgb(10, 165, 102)" />
+							<stop offset="100%" stop-color="rgb(61, 192, 136)" />
+						  </linearGradient>
+						</defs>
+						<rect width="40" height="40" rx="20" fill="url(#grad1)"/>
+						<path d="M19.9999 24.7826C22.6413 24.7826 24.7825 22.6414 24.7825 20C24.7825 17.3586 22.6413 15.2174 19.9999 15.2174C17.3585 15.2174 15.2173 17.3586 15.2173 20C15.2173 22.6414 17.3585 24.7826 19.9999 24.7826Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M25.2609 9H14.7391C11.5695 9 9 11.5695 9 14.7391V25.2609C9 28.4305 11.5695 31 14.7391 31H25.2609C28.4305 31 31 28.4305 31 25.2609V14.7391C31 11.5695 28.4305 9 25.2609 9Z" stroke="white" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M26.6738 13.7826C26.6738 14.0347 26.4694 14.2391 26.2173 14.2391C25.9651 14.2391 25.7607 14.0347 25.7607 13.7826C25.7607 13.5305 25.9651 13.3261 26.2173 13.3261C26.4694 13.3261 26.6738 13.5305 26.6738 13.7826Z" fill="black" stroke="white"/>
+					  </svg>					  
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+<section class="welcome" >
+	<div class="container">
+		<div class="welcome__title">
+			<span>Інвестуй у зелений </span>
+			капітал разом із GROWER!
+		</div>
+		<div class="welcome__description">
+			Вирощування декоративних рослин із сучасними підходами до прибуткового садівництва з гарантованим зростанням та реальними дивідендами.
+		</div>
+		<div class="welcome__btn">
+			<a href="" class="btn">
+				<img src="img/icons/btn.svg" alt="">
+				ДІЯ НА КНОПКУ
+			</a>
+		</div>
+	</div>
+</section>
+<section class="about" id="us">
+	<div class="container">
+		<div class="global-title">
+			Що таке <span>GROWER?</span>
+		</div>
+		<div class="about-wrapper">
+			<div class="about-img">
+				<img src="img/about.png" alt="">
+			</div>
+			<div class="about-text">
+				<div class="about-text">
+					<p><span class="about-text__title" >Grover</span> - молодий проєкт, який є похідною від фізичного бізнесу із досвідом понад 25 років. Профільна діяльність якого вирощування, продаж та імпорт (квітів, вазонів, садових та декоративних рослин, дерев). За роки діяльності ми визначили пріоритети та сформували комерційну пропозицію, яка будується на чітких технічних можливостях.</p> 
+					<p>Пропозиція полягає у вирощуванні декоративних дерев та заробіток на цьому. За основу взяті усім нам відомі садові дерева Туї!</p>
+					<div class="about-text__btn welcome__btn">
+						<a href="" class="btn">
+							<img src="img/icons/btn.svg" alt="">
+							ДІЯ НА КНОПКУ
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="mission">
+	<div class="container">
+		<div class="global-title">
+			Наша <span>місія</span>
+		</div>
+		<div class="mission-wrapper">
+				<div class="mission-text">
+					<p><span class="mission-text__title">Ми прагнемо створити найбільше господарство декоративних рослин в Україні</span>, шляхом
+						залучення до процесу інвесторів та просто зацікавлених громадян, які підтримують
+						ідею заробітку та створення нового естетичного візуалу нашої країни</p> 
+					<p>У найближчі роки ми плануємо зайняти вагому частку ринку в даному напрямку у нашій
+						державі та побудувати конкурентну здатність на закордонних ринках. Разом
+						озеленюємо та примножуємо.
+						</p>
+				</div>
+				<div class="mission-img">
+					<img src="img/mission.png" alt="">
+				</div>
+		</div>
+	</div>
+</section>
+<section class="problems">
+	<div class="container">
+		<div class="global-title">
+			Проблеми, які <span>ми вирішуємо</span>
+		</div>
+		<div class="problems-wrap">
+			<div class="problems__item">
+				<div class="problems-img">
+					<img src="img/icons/problems/1.svg" alt="">
+					<div class="problems-img__line">
+						<img src="" alt="">
+					</div>
+				</div>
+				<div class="problems-text">
+					<div class="problems-text__title">
+						Проблема №1 — Відсутність стабільних і доступних інвестицій
+					</div>
+					<ul class="problems-text-list">
+						<li>
+							<div class="problems-text-list__img">
+
+							</div>
+							<div class="problems-text-list__title">
+								Люди шукають надійні способи примноження грошей, але бояться ризику.
+							</div>
+						</li>
+						<li>
+							<div class="problems-text-list__img">
+
+							</div>
+							<div class="problems-text-list__title">
+								Фондовий ринок нестабільний, нерухомість дорога, а гроші знецінюються.
+							</div>
+						</li>
+					</ul>
+					<div class="problems-text__title problems-text__title--answer">
+						Рішення:
+					</div>
+					<ul class="problems-text-list problems-text-list--answer">
+						<li>
+							<div class="problems-text-list__img">
+
+							</div>
+							<div class="problems-text-list__title">
+								Інвестиції в хвойні рослини — доступний старт (від $180), прогнозований прибуток (від 100-300% за 2-3 роки) і стабільний попит.
+
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="problems__item">
+				<div class="problems-img">
+					<img src="img/icons/problems/1.svg" alt="">
+					<div class="problems-img__line">
+						<img src="" alt="">
+					</div>
+				</div>
+				<div class="problems-text">
+					<div class="problems-text__title">
+						Проблема №2 — Недостатньо якісного озеленення
+					</div>
+					<ul class="problems-text-list">
+						<li>
+							<div class="problems-text-list__img">
+
+							</div>
+							<div class="problems-text-list__title">
+								Міста страждають від нестачі зелених насаджень.
+							</div>
+						</li>
+						<li>
+							<div class="problems-text-list__img">
+
+							</div>
+							<div class="problems-text-list__title">
+								Ландшафтні дизайнери та садові центри постійно шукають якісні саджанці.
+							</div>
+						</li>
+					</ul>
+					<div class="problems-text__title problems-text__title--answer">
+						Рішення:
+					</div>
+					<ul class="problems-text-list problems-text-list--answer">
+						<li>
+							<div class="problems-text-list__img">
+
+							</div>
+							<div class="problems-text-list__title">
+								Ми вирощуємо здорові, адаптовані рослини для міського озеленення, парків, приватних садиб.
+
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="problems__item">
+				<div class="problems-img">
+					<img src="img/icons/problems/1.svg" alt="">
+					<div class="problems-img__line">
+						<img src="" alt="">
+					</div>
+				</div>
+				<div class="problems-text">
+					<div class="problems-text__title">
+						Проблема №3 — Люди хочуть пасивний прибуток, але не знають як і куди вкласти свої кошти
+					</div>
+					<ul class="problems-text-list">
+						<li>
+							<div class="problems-text-list__img">
+
+							</div>
+							<div class="problems-text-list__title">
+								Багато хто хоче заробляти на природі, але не має досвіду.
+							</div>
+						</li>
+					</ul>
+					<div class="problems-text__title problems-text__title--answer">
+						Рішення:
+					</div>
+					<ul class="problems-text-list problems-text-list--answer">
+						<li>
+							<div class="problems-text-list__img">
+
+							</div>
+							<div class="problems-text-list__title">
+								Ми пропонуємо готові рішення — від вирощування до збуту та виплати девідентів.
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="why-us">
+	<div class="container">
+		<div class="global-title global-title--white">
+			Чому обирають <span>GROWER?</span>
+		</div>
+		<div class="why-us-wrapper">
+			<div class="why-us__wrap">
+				<div class="why-us__item">
+					<div class="why-us__number">
+						1
+					</div>
+					<div class="why-us__img">
+						<img src="img/icons/ok.svg" alt="">
+					</div>
+					<div class="why-us__title">
+						<span>Фізичний актив</span> — зелене інвестування з гарантованим зростанням
+					</div>
+				</div>
+			</div>
+			<div class="why-us__wrap">
+				<div class="why-us__item">
+					<div class="why-us__number">
+						2
+					</div>
+					<div class="why-us__img">
+						<img src="img/icons/ok.svg" alt="">
+					</div>
+					<div class="why-us__title">
+						<span>Мінімальні ризики</span> — голландські саджанці з 90% приживання рослин
+					</div>
+				</div>
+			</div>
+			<div class="why-us__wrap">
+				<div class="why-us__item">
+					<div class="why-us__number">
+						3
+					</div>
+					<div class="why-us__img">
+						<img src="img/icons/ok.svg" alt="">
+					</div>
+					<div class="why-us__title">
+						<span>Онлайн-кабінет для моніторингу теплиць</span>
+					</div>
+				</div>
+			</div>
+			<div class="why-us__wrap">
+				<div class="why-us__item">
+					<div class="why-us__number">
+						4
+					</div>
+					<div class="why-us__img">
+						<img src="img/icons/ok.svg" alt="">
+					</div>
+					<div class="why-us__title">
+						<span>Мінімальний вхід від $180</span>
+					</div>
+				</div>
+			</div>
+			<div class="why-us__wrap">
+				<div class="why-us__item">
+					<div class="why-us__number">
+						5
+					</div>
+					<div class="why-us__img">
+						<img src="img/icons/ok.		svg" alt="">
+					</div>
+					<div class="why-us__title">
+						<span>30% річного приросту у $</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+<section class="plants" id="plants">
+	<div class="container">
+		<div class="global-title">
+			НАШІ <span>РОСЛИНИ</span>
+		</div>
+		<div class="plants-wrapper">
+			<div class="plants__wrap">
+				<div class="plants__img">
+					<img src="img/plants/3.png" alt="">
+					<div class="plants__img-title">
+						Смарагд
+					</div>
+				</div>
+			</div>
+			<div class="plants__wrap">
+				<div class="plants__img">
+					<img src="img/plants/2.png" alt="">
+					<div class="plants__img-title">
+						Брабант
+					</div>
+				</div>
+			</div>
+			<div class="plants__wrap">
+				<div class="plants__img">
+					<img src="img/plants/1.png" alt="">
+					<div class="plants__img-title">
+						Даніка
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="FAQ">
+	<div class="container">
+		<div class="global-title">
+			Запитання та <span>відповіді</span>
+		</div>
+		<div class="FAQ__wrap">
+                        <div class="FAQ-item">
+                            <div class="FAQ-item-question">
+                                <p>Чому саме Туї?</p>
+                                <div class="FAQ-item-question__btn"><img src="img/icons/arrow.svg" alt=""></div>
+                            </div>
+                            <p class="FAQ-item-answer">
+                                Бо це дерево є максимально невибагливим до умов та клімату, і за правильним підходом до процесу вирощування, дає приріст до 30% в рік, що відображається у ростовому показнику та монетизації.
+                        </p></div>
+
+                        <div class="FAQ-item">
+                            <div class="FAQ-item-question">
+                                <p>Чому саме 30%?</p>
+                                <div class="FAQ-item-question__btn"><img src="img/icons/arrow.svg" alt=""></div>
+                            </div>
+                            <p class="FAQ-item-answer">
+                                Проведені роками дослідження та заміри рослин у процесі їх зростання дали можливість сформувати чіткі середньорічні розрахунки.
+                            </p>
+                        </div>
+
+                        <div class="FAQ-item">
+                            <div class="FAQ-item-question">
+                                <p>Чому мінімальна інвестиція 180$?</p>
+                                <div class="FAQ-item-question__btn"><img src="img/icons/arrow.svg" alt=""></div>
+                            </div>
+                            <p class="FAQ-item-answer">
+                            Розмір мінімальної інвестиції становить 180$, що дорівнює 144 саджанцям (1 касета для розсаджування). Максимальний р
+                            </p>
+                        </div>
+
+                        <div class="FAQ-item">
+                            <div class="FAQ-item-question">
+                                <p>Що таке тираж і скільки їх буде?</p>
+                                <div class="FAQ-item-question__btn"><img src="img/icons/arrow.svg" alt=""></div>
+                            </div>
+                            <p class="FAQ-item-answer">
+                                Це фіксована кількість рослин, які готові до продажу в цей момент. На сьогодні
+це число складає 56 000 укорінених рослин.
+Кількість тиражів визначена часом. Компанія має стратегію розвитку, згідно з
+якою до червня 2025 року ми плануємо висадити близько 450 000 рослин різних
+сортів.
+Цей прорахунок обґрунтовано технічними та функціональними можливостями
+                            </p>
+                        </div>
+
+                        <div class="FAQ-item">
+                            <div class="FAQ-item-question">
+                                <p>Як буде відбуватися збут?</p>
+                                <div class="FAQ-item-question__btn"><img src="img/icons/arrow.svg" alt=""></div>
+                            </div>
+                            <p class="FAQ-item-answer">
+                                Нашим досвідом є фізичний бізнес (група компаній із системою роздрібних
+магазинів, гуртівня та більше як 8 гектар теплиць, які працюють із B2B та B2C
+клієнтом). Уся система має налагоджений збут.
+Тому реалізація рослин для інвестора забезпечена. Компанія слідує стратегії
+розвитку, за якою уже невдовзі буде запущена фіто біржа. Саме для цього нам
+потрібні інвестори, щоб створити систему. Кожен інвестор може бути як просто
+охочий заробити, так і той, хто має профільний бізнес. Таким чином ми
+наповнюємо середовище покупцями та продавцями, створюючи свою
+віртуальну екоком'юніті. З власного досвіду знаємо, що на сьогодні в Україну
+імпортується близько 5,5 млн сформованих рослин, які надалі реалізуються на
+внутрішньому ринку. Отже, основним стимулом для розвитку є заміщення
+даного процесу та вирощування конкурентного товару в Україні. Створення
+найбільшого господарства декоративних рослин, вирощеного із європейського
+матеріалу та запуск першої фіто біржі.
+
+                            </p>
+                        </div>
+
+                    </div>
+	</div>
+</section>
+<section class="garant" id="garant">
+	<div class="container">
+		<div class="global-title">
+			<span>Гарантії</span>
+		</div>
+		<div class="garant-wrapper">
+			<div class="garant-item">
+				<div class="garant-img">
+					1
+				</div>
+				<div class="garant-text">
+					<div class="garant-text__title">
+						Які ризики?
+					</div>
+					<div class="garant-text__description">
+						Ми декларуємо рівень ризиків на межі 10% і хочу наголосити, що цей показник є максимальним. Оскільки за основу ми використовуємо голландські саджанці, адже рівень адаптивності та приживання у них більший в порівнянні з аналогами. Наприклад: Голландський 90% на 10%, де 90% є показник приживання, а 10% ризик. Український 60% на 40%, у тому ж порядку. Ці показники є перевірені часом та досвідом!
+					</div>
+				</div>
+			</div>
+			<div class="garant-item">
+				<div class="garant-img">
+					2
+				</div>
+				<div class="garant-text">
+					<div class="garant-text__title">
+						Яка гарантія збуту?
+					</div>
+					<div class="garant-text__description">
+						Компанія Grower гарантує збут, тому інвестору не доведеться клопотатися за спосіб і процес реалізації. Також дуже важливо розуміти, що ризики, які задекларовані не є обов’язковими Важливо, кожних пів року наш агроном буде проводити замір об’ємного, ростового та кількісного показника в процесі вирощування. Для того, щоб партнер міг контролювати, в якому стані перебувають його рослини. Усі дані будуть регулярно вноситись в онлайн кабінет, де інвестор може побачити усю інформацію. Також звертаємо вашу увагу на те, що вкладені кошти можна вивести на будь-якому етапі шляхом: 1) продажу рослин компанії Grower за ціною покупки (в разі термінової необхідності); 2) розміщення заявки на продаж на внутрішній біржі за ринковою ціною.
+					</div>
+				</div>
+			</div>
+			<div class="garant-item">
+				<div class="garant-img">
+					3
+				</div>
+				<div class="garant-text">
+					<div class="garant-text__title">
+						Що отримує інвестор? 
+					</div>
+					<div class="garant-text__description">
+						Перш за все, це унікальна пропозиція
+збалансована багатьма критеріями!
+Це живе матеріальне забезпечення, яке ніколи не знизиться у вартості та
+впевнено зростає незалежно від кліматичних умов.
+Можливість продажу частини пакета або ж усього відразу на будь-якому етапі
+Гарантований приріст на рівні 30% річних у $, підкріплений досвідом
+Супровід процесу: догляд, полив, пересадка, продаж
+Доступ 24/7
+Онлайн кабінет
+Моніторинг приросту
+Веб-доступ до теплиці
+Контроль усіх показників (температура, вологість, полив)
+Доступ до фіто біржі
+					</div>
+				</div>
+			</div>
+			<div class="garant-item">
+				<div class="garant-img">
+					4
+				</div>
+				<div class="garant-text">
+					<div class="garant-text__title">
+						Які документи отримає інвестор?
+					</div>
+					<div class="garant-text__description">
+						На кожну покупку інвестор отримує накладну, що свідчить про придбання товару.
+Далі інвестор підписує договір з компанією Grower про збереження та
+вирощування рослин та акт прийняття-передання, який буде йти в супроводі (що
+гарантує інвестору цілісність та приріст його рослин для отримання бажаного
+результату). ;Чому так?
+Бо рослини як фіто товар являються власністю клієнта, а компанія Grower дбає
+за збереження та вирощування.
+А також проєкт Grower не являється інвестиційною чи фінансовою компанією, а
+є фізичним бізнесом, який пропонує розділити уміння та досвід і реалізувати
+його прямим способом - розвитком спільного бізнесу
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="join">
+	<div class="container">
+		<div class="join-wrapper">
+			<div class="join-img">
+				<img src="img/about.png" alt="">
+			</div>
+			<div class="join-text">
+				У вас є унікальний шанс стати частиною Green Family Grower яка дбає за екологічне майбутнє нашої країни і створює можливість розвиватися та заробляти кожному
+				<div class="join-btn welcome__btn">
+					<a href="" class="btn">
+						<img src="img/icons/btn.svg" alt="">
+						Приєднатись
+					</a>
+				</div>
+			</div>
+			<div class="join-img">
+				<img src="img/about.png" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	document.querySelectorAll('.FAQ-item-question').forEach(function (question) {
+  question.addEventListener('click', function () {
+    this.closest('.FAQ-item').classList.toggle('FAQ-item--open');
+  });
+});
+
+</script>
+				<footer class="footer">
+					<div class="container">
+						<div class="footer-wrapper">
+							<div class="footer_logo">
+								<img src="img/logo.svg" alt="">
+							</div>
+							<div class="footer-politic">
+								<a href="">Договір купівлі і купівлі-продажу</a>
+							</div>
+							<div class="footer-socials">
+								<div class="footer-socials__mail">
+									<a href="mailto:support@growerinvest.com">support@growerinvest.com</a>
+								</div>
+								<a href="tel:+380985648091">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+										<defs>
+										  <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(75)">
+											<stop offset="0%" stop-color="rgb(2, 146, 87)" />
+											<stop offset="100%" stop-color="rgb(98, 144, 135)" />
+										  </linearGradient>
+										</defs>
+										<rect width="40" height="40" rx="20" fill="url(#bg-gradient)" />
+										<path d="M23.3022 9.91807C24.9276 10.3543 26.4097 11.2104 27.5997 12.4004C28.7897 13.5904 29.6458 15.0724 30.082 16.6978" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M22.3079 13.6194C23.2854 13.879 24.177 14.3924 24.8922 15.1077C25.6074 15.8229 26.1209 16.7145 26.3805 17.692" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M15.2886 20.0757C16.2747 22.1121 17.9213 23.7545 19.9602 24.7353C20.1106 24.8065 20.277 24.8373 20.4429 24.8247C20.6088 24.8121 20.7686 24.7566 20.9065 24.6634L23.9011 22.6631C24.0334 22.5733 24.1863 22.5186 24.3455 22.5039C24.5047 22.4892 24.665 22.5151 24.8114 22.5792L30.4173 24.9869C30.6089 25.0666 30.769 25.2071 30.8729 25.3868C30.9768 25.5664 31.0187 25.7752 30.9923 25.9811C30.8146 27.3678 30.1377 28.6424 29.0883 29.5662C28.0388 30.4899 26.6887 30.9997 25.2906 31C20.9701 31 16.8265 29.2837 13.7714 26.2286C10.7163 23.1735 9 19.0299 9 14.7094C9.00032 13.3113 9.51006 11.9612 10.4338 10.9117C11.3576 9.86229 12.6322 9.18539 14.0189 9.00771C14.2248 8.98127 14.4336 9.02323 14.6132 9.12712C14.7929 9.23101 14.9334 9.39108 15.0131 9.58267L17.4208 15.2005C17.4834 15.3447 17.5096 15.502 17.4971 15.6587C17.4845 15.8154 17.4337 15.9665 17.3489 16.0989L15.3485 19.1414C15.2595 19.279 15.2072 19.4372 15.1967 19.6008C15.1862 19.7643 15.2179 19.9279 15.2886 20.0757Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+									  </svg>									  
+								</a>
+								<a href="https://www.instagram.com/grower_invest?igsh=MWkxbGc0dmM2bHF3bQ==" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+										<defs>
+										  <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(75)">
+											<stop offset="0%" stop-color="rgb(2, 146, 87)" />
+											<stop offset="100%" stop-color="rgb(98, 144, 135)" />
+										  </linearGradient>
+										</defs>
+										<rect width="40" height="40" rx="20" fill="url(#bg-gradient)" />
+										<path d="M19.9999 24.7826C22.6413 24.7826 24.7825 22.6414 24.7825 20C24.7825 17.3586 22.6413 15.2174 19.9999 15.2174C17.3585 15.2174 15.2173 17.3586 15.2173 20C15.2173 22.6414 17.3585 24.7826 19.9999 24.7826Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M25.2609 9H14.7391C11.5695 9 9 11.5695 9 14.7391V25.2609C9 28.4305 11.5695 31 14.7391 31H25.2609C28.4305 31 31 28.4305 31 25.2609V14.7391C31 11.5695 28.4305 9 25.2609 9Z" stroke="white" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M26.6738 13.7826C26.6738 14.0347 26.4694 14.2391 26.2173 14.2391C25.9651 14.2391 25.7607 14.0347 25.7607 13.7826C25.7607 13.5305 25.9651 13.3261 26.2173 13.3261C26.4694 13.3261 26.6738 13.5305 26.6738 13.7826Z" fill="black" stroke="white"/>
+									  </svg>																			
+								</a>
+								<a href="">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+										<defs>
+										  <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(75)">
+											<stop offset="0%" stop-color="rgb(2, 146, 87)" />
+											<stop offset="100%" stop-color="rgb(98, 144, 135)" />
+										  </linearGradient>
+										</defs>
+										<rect width="40" height="40" rx="20" fill="url(#bg-gradient)" />
+										<path d="M20.5216 16.7937L20.5216 17.2937H21.0216H24.6053L24.3998 19.7935H21.0215H20.5215V20.2935V31.9529H16.6728V20.2935V19.7935H16.1728H14.085V17.2937H16.1728H16.6728V16.7937V14.4416C16.6728 13.9251 16.6804 13.3026 16.7808 12.6937C16.8819 12.0806 17.0696 11.5308 17.394 11.1317L17.3946 11.131C18.1482 10.2007 19.1706 9.55664 21.0216 9.55664C22.6309 9.55664 23.7667 9.66367 24.4932 9.76851C24.7346 9.80334 24.9308 9.83793 25.0842 9.86828L24.6142 12.4714C24.5591 12.4603 24.5006 12.449 24.4393 12.4377C24.0295 12.3621 23.4751 12.2836 22.929 12.2836C22.3837 12.2836 21.8071 12.3724 21.3489 12.6356C20.859 12.917 20.5217 13.393 20.5217 14.0609C20.5217 14.0609 20.5217 14.0609 20.5217 14.0609L20.5216 16.7937Z" stroke="white"/>
+									  </svg>									  
+								</a>
+
+							</div>
+						</div>
+					</div>
+				</footer>
+			</main>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+</html>
